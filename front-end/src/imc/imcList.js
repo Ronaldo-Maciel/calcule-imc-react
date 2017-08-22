@@ -3,9 +3,12 @@ import React from 'react'
 export default props => {
     const renderRows = () => {
         const list = props.list || []
-        return list.map(imc => (
-            <tr key={imc._id}>
-                <td> {imc.name}</td>
+        console.log(list)
+        return list.map(item => (
+            <tr key={item._id}>
+                <td> {item.name} </td>
+                <td> Qualquer </td>
+                <td> {item.imc} </td>
             </tr>
         ))
     }
